@@ -20,3 +20,6 @@ npm run dev
 if you don't get a error you should see URL for localhost that you can paste in your browser (don't close the terminal or the server will stop running).
 
 <img width="2048" height="1536" alt="image" src="https://github.com/user-attachments/assets/20620c3e-a8e4-49a0-a96c-f23886d6a61c" />
+
+
+mreoww nyaa mrrp :3
