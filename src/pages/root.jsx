@@ -1,19 +1,18 @@
 import { Link, Outlet } from "react-router-dom"
+import "./root.css";
 
 function Main() {
   return (
-    <>
-      <h1>main page</h1>
-      <table>
-        <ul>
-          <li><Link to="/PNG">convert to PNG.</Link></li>
-          <li><Link to="/JPG">convert to JPG.</Link></li>
-          <li><Link to="/WebP">convert to WebP.</Link></li>
-        </ul>
-      </table>
-      <br />
-      <Outlet />
-    </>
+    <table>
+      <tr>
+        <th><Link to="/PNG" className="button">convert to PNG.</Link></th>
+        <th><Link to="/JPG" className="button">convert to JPG.</Link></th>
+        <th><Link to="/WebP" className="button">convert to WebP.</Link></th>
+      </tr>
+      <tr>
+        <th colSpan={3} id="card"><Outlet /></th>
+      </tr>
+    </table>
   )
 }
 
