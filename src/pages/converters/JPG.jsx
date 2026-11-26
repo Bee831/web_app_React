@@ -5,5 +5,6 @@ function JPG() {
         <h1>JPG!!!</h1>
     )
 }
-
+// beeguy change favicon 
+//ps. micheal colny
 export default JPG

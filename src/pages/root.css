@@ -1,30 +1,151 @@
-#card {
-    height: 35vh;
-    border: 4px solid black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    min-height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #fcfcfc 0%, #eaf3ff 100%);
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  padding: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/pusheen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  transform: scale(1.08);
+}
+
+.converter-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+#card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
+  padding: 40px 50px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  min-height: auto;
 }
 
 .button {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    font-weight: bolder;
-    font-size: large;
-    margin: 2px;
-    padding: 7px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: gainsboro;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 22px;
+  margin: 6px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+  background-color: #FBFBFB;
+  color: #000000;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.12);
+  background-color: #c98b6f;
 }
 
 table {
-    border-collapse: separate;
-    border-spacing: 5px;
+  border-collapse: separate;
+  border-spacing: 12px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #card {
+    padding: 28px 20px;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+.converter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.file-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.file-name {
+  font-weight: 400;
+  color: #334155;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.button.download-btn {
+  background-color: #ffe5ce;
+  color: #000000;
+}
+
+.button.download-btn:hover {
+  background-color: #ffbb8d;
+}
+
+.footer-credits {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+  color: #535150;
+  text-align: center;
+}
+
+.credit-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.credit-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
 }
