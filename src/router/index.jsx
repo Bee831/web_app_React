@@ -1,8 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from '../pages/root';
-import Png from '../pages/converters/PNG';
-import Jpg from '../pages/converters/JPG';
-import Webp from '../pages/converters/WebP';
+import Converter from "../pages/Converter";
 
 const router = createBrowserRouter([
     {
@@ -11,13 +9,13 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/PNG",
-                element: <Png />,
+                element: <Converter display="PNG" type="image/png"/>,
             },{
-                path: "/JPG",
-                element: <Jpg />,
+                path: "/JPEG",
+                element: <Converter display="JPEG" type="image/jpeg"/>,
             },{
                 path: "/WebP",
-                element: <Webp />,
+                element: <Converter display="WebP" type="image/webp"/>,
             },
         ]
     },

@@ -11,7 +11,7 @@ function Main() {
       </tr>
       <tr>
         <th><Link to="/PNG" className="button">convert to PNG.</Link></th>
-        <th><Link to="/JPG" className="button">convert to JPG.</Link></th>
+        <th><Link to="/JPEG" className="button">convert to JPEG.</Link></th>
         <th><Link to="/WebP" className="button">convert to WebP.</Link></th>
       </tr>
       <tr>

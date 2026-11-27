@@ -41,7 +41,7 @@ body::before {
   background: white;
   border-radius: 20px;
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
-  padding: 40px 50px;
+  padding: 20px 25px;
   max-width: 700px;
   width: 100%;
   text-align: center;
@@ -68,7 +68,7 @@ body::before {
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.12);
-  background-color: #c98b6f;
+  background-color: #e69f7e;
 }
 
 table {
@@ -109,7 +109,7 @@ table {
   color: #334155;
 }
 
-.download-btn {
+.card-btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #2563eb;
@@ -120,12 +120,12 @@ table {
   font-size: 0.95rem;
 }
 
-.button.download-btn {
-  background-color: #ffe5ce;
+.button.card-btn {
+  background-color: #ffd8b5;
   color: #000000;
 }
 
-.button.download-btn:hover {
+.button.card-btn:hover {
   background-color: #ffbb8d;
 }
 
@@ -148,4 +148,40 @@ table {
 .credit-link:hover {
   text-decoration: underline;
   opacity: 0.85;
+}
+
+#file_input {
+  display: none;
+}
+
+.top-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.previev {
+  height: 200px;
+  width: 200px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.img-border {
+  height: 210px;
+  width: 210px;
+  max-width: 210px;
+  max-height: 210px;
+  border: solid 5px #ffbb8d67;
+  border-radius: 5px;
+}
+
+.inactive .card-btn {
+  background-color: #806c5b3a;
+  color: white;
+}
+
+.inactive .card-btn:hover {
+  background-color: #806c5b3a;
+  color: white;
 }
